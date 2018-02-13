@@ -1,0 +1,63 @@
+{
+  "name": "freisticapp",
+  "version": "1.0.000",
+  "private": true,
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "kumar.rohit.tiwari@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bluebird": "3.5.0",
+    "body-parser": "1.17.2",
+    "bower": "1.8.2",
+    "cheerio": "1.0.0-rc.1",
+    "cookie": "0.3.*",
+    "cookie-parser": "1.4.*",
+    "crypto": "0.0.*",
+    "express": "4.15.3",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "grunt": "1.0.*",
+    "grunt-cli": "^1.2.0",
+    "http": "0.0.*",
+    "https": "1.0.*",
+    "json-cycle": "^1.3.0",
+    "jsonwebtoken": "7.4.1",
+    "lodash": "4.17.*",
+    "path": "0.12.*",
+    "pug": "2.0.0-rc.4",
+    "request": "2.81.*",
+    "request-promise": "4.2.1",
+    "underscore": "1.8.*",
+    "uuid": "3.0.1",
+    "winston": "2.3.*",
+    "winston-daily-rotate-file": "1.4.*"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "connect-livereload": "0.6.0",
+    "grunt-babel": "6.0.0",
+    "grunt-concurrent": "2.3.1",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "2.2.0",
+    "grunt-contrib-jade": "1.0.0",
+    "grunt-contrib-uglify": "3.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-express-server": "0.5.3",
+    "grunt-open": "0.2.3",
+    "grunt-usemin": "3.1.1",
+    "node-monkey": "0.2.16"
+  },
+  "engines": {
+    "node": "6.10.0"
+  }
+}

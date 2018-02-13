@@ -1,0 +1,11 @@
+/node_modules
+/.idea
+# Created by .ignore support plugin (hsz.mobi)
+/app/bower_components
+/nbproject
+/zip/
+/dev.vireshmahajan.com.conf
+/dev.vireshmahajan.com.crt
+/dev.vireshmahajan.com.key
+/mycert.p7b
+/.vscode/
