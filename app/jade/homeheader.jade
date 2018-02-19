@@ -1,0 +1,14 @@
+.container
+  .row
+    .col-md-7
+      .navbar-header
+        a.fl-header-mark(href='/')
+        a.navbar-brand.brand-text(href='/') Freistic
+    .col-md-2
+      label Email Address
+      input.form-control(type='text' ng-model='homeCtrl.loginemail' placeholder='Email Address')
+    .col-md-2
+      label Password
+      input.form-control(type='password' ng-model='homeCtrl.loginpassword' placeholder='password')
+    .col-md-1
+      btn.btn.btn-secondary(ng-click='homeCtrl.loginUser()') Log In

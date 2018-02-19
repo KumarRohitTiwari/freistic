@@ -1,4 +1,20 @@
 .container
   .navbar-header
-    a.fl-header-mark(href='')
-    a.navbar-brand.brand-text(href='') Freistic
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#main-navbar')
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.fl-header-mark(href='/')
+    a.navbar-brand.brand-text(href='/') Freistic
+  #main-navbar.collapse.navbar-collapse(pb-mobile-menu-close='')
+    ul.nav.navbar-nav.navbar-right
+      li.dropdown.menu-user#usermenu
+        a.dropdown-toggle(data-toggle='dropdown')
+          span Rohit Tiwari
+          ul.dropdown-menu(role='menu')
+            li
+              a(href="/profile") Edit Profile
+            li.divider(role='separator')
+            li
+              a(href="", ng-click="headCtrl.logOut()") Log Out

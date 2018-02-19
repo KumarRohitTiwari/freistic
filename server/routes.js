@@ -9,7 +9,7 @@ if(fileStyles == "unminified")
 var express = require('express');
 var router = module.exports = express.Router();
 var path = require('path');
-var geotaxRouter = require("./geotax.js");
+var freisticRouter = require("./freistic.js");
 var configJSON = require('./config.js');
 var configObj = configJSON.getEnvObject();
 var cookie = require('cookie');
@@ -20,7 +20,7 @@ router.use('/css',express.static (servingDirectory + '/css'));
 router.use('/controllers',express.static (servingDirectory +'/controllers'));
 router.use('/views',express.static (servingDirectory +'/views'));
 router.use('/',express.static (servingDirectory));
-router.use(geotaxRouter);
+router.use(freisticRouter);
 router.get(/^\/*/,serveIndex);// keep it a last route
 
 

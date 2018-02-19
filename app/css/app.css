@@ -1,6 +1,5 @@
 .fl-header-mark {
     display: inline-block;
-    float: left;
     margin-top: 18px;
     margin-right: 15px;
     width: 100px;
@@ -9,4 +8,37 @@
     background-position: center center;
     background-repeat: no-repeat;
 	background-size: 100px 35px;
+}
+.hamburger .navbar-default, .welcome .site-content, .welcome main, #header, header, .signin{
+	background-color: #3b5998;
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+    border-bottom: 1px solid #133783;
+}
+.rowgap{
+    margin-top: 15px;
+}
+.fullheight{
+    justify-content: center;
+	align-items: center;
+    flex: 1;
+    display: flex;
+    height: calc(100vh - 173px);
+}
+header label{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+header .form-control{
+    height: 30px;
+}
+header .btn-secondary{
+    background-color: #ffffff;
+    margin-top: 25px;
+    min-width: 60px;
+    height: 28px;
+    padding: 5px;
+}
+.dropdown-menu a.dropdown-toggle{
+    padding: 0px !important;
 }

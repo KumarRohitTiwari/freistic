@@ -9,8 +9,15 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',"$httpProv
     $urlRouterProvider.otherwise("/");
     $stateProvider.state("blank",{
         url: "/",
-        templateUrl: "views/home.html"
+        templateUrl: "views/home.html",
+        controller: "homeController as homeCtrl"
     })
+	.state('profile',{
+		url: "/profile",
+        templateUrl: "views/profile.html",
+        controller: "profileController as profCtrl",
+        resolve :{}
+	})
 }]);
 
 

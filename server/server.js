@@ -1,6 +1,7 @@
 
 const env = require('./config.js').getEnv();
 const express = require('express');
+const mongoose = require('mongoose');
 const https = require('https');
 const http = require('http');
 const fs = require('file-system');
@@ -9,6 +10,7 @@ startLiveReloadAndNOMO(); //Comment If you Don't Want to see server Logs in Brow
 const router = require('./routes.js');
 const bodyParser = require("body-parser");
 const port = process.env.PORT || 5050;
+var db = require('./db/properties');
 
 let server;
 function allowCrossDomain (req, res, next) {

@@ -1,12 +1,52 @@
 
 <header>
-  <div ng-include="'views/header.html'" role="navigation" class="navbar navbar-default custom-navbar"></div>
+  <div ng-include="'views/homeheader.html'" role="navigation" class="navbar navbar-default custom-navbar"></div>
 </header>
-<main>
+<main class="fullheight">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 homebg col-xs-12">
+      <div class="col-md-7 homebg">
         <div style="text-align:center;"><img src="../images/comingsoon.jpg"/></div>
+      </div>
+      <div class="col-md-5">
+        <h1>Create a new account</h1>
+        <div ng-if="homeCtrl.errormsg != &quot;&quot;" class="alert alert-danger">{{homeCtrl.errormsg}}</div>
+        <div class="row">
+          <div style="text-align: center;" class="col-md-12">
+            <div role="group" class="btn-group">
+              <label ng-class="{'active': homeCtrl.type === 'transporter'}" ng-click="homeCtrl.type = 'transporter'" class="btn btn-default btn-xlarge">Transporter</label>
+              <label ng-class="{'active': homeCtrl.type === 'consumer'}" ng-click="homeCtrl.type = 'consumer'" class="btn btn-default btn-xlarge">Consumer</label>
+            </div>
+          </div>
+        </div>
+        <div class="row rowgap">
+          <div class="col-md-6">
+            <input type="text" ng-model="homeCtrl.firstName" placeholder="First Name" class="form-control"/>
+          </div>
+          <div class="col-md-6">
+            <input type="text" ng-model="homeCtrl.lastName" placeholder="Last Name" class="form-control"/>
+          </div>
+        </div>
+        <div class="row rowgap">
+          <div class="col-md-12">
+            <input type="text" ng-model="homeCtrl.email" placeholder="Email Address" class="form-control"/>
+          </div>
+        </div>
+        <div class="row rowgap">
+          <div class="col-md-12">
+            <input type="text" ng-model="homeCtrl.mobile" placeholder="Mobile Number" class="form-control"/>
+          </div>
+        </div>
+        <div class="row rowgap">
+          <div class="col-md-12">
+            <input type="password" ng-model="homeCtrl.password" placeholder="Password" class="form-control"/>
+          </div>
+        </div>
+        <div class="row rowgap">
+          <div class="col-md-12">
+            <btn ng-click="homeCtrl.createAccount()" class="btn btn-primary">Create Account</btn>
+          </div>
+        </div>
       </div>
     </div>
   </div>
